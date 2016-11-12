@@ -1,0 +1,29 @@
+# Protokoll
+Ein **Datenblock** besteht aus: Start-Markierung, Datensätzen, Ende-Markierung
+Ein **Datensatz** besteht aus: Kopf, Kennung, Daten
+## Kopf
+IP des Senders
+## Kennung 
+Art der folgenden Daten
+1. P - Spieler Daten 
+2. D - Debris
+3. A - Asteroiden 
+4. S - Schiff Daten 
+## Daten
+### P - Spieler Daten 
+- Koordinaten (x,y,z)
+- Ship
+- Name
+- Zustand 
+
+
+
+# Auswertung
+Entsprechend der übergebenen Kennung werden die einzelnen Objekte (Spieler, Gegner, Flotte, eventuell Asteroiden etc) mit ihrem Namen und Koordinaten in eine Tabelle eingetragen.
+Jedes Objekt hat einen Timer der abläuft. 
+Kommt ein neuer Datensatz zu einem Objekt, wird der Timer zurückgesetzt.
+Ist der Timer auf Null wird das Objekt als „ungültig“ markiert (blinkend) und anschließend (nach x weiteren Durchläufen) entfernt.
+
+# to do
+
+- [ ] Wie genau sind die einzelnen Objekte bezeichnet, welcher Wert ist einzigartig von jedem Objekt (FRED-Name?)

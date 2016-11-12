@@ -1,0 +1,22 @@
+#Global Hooks
+
+$HUD: [   ]
+   
+#End
+
+#Conditional Hooks
+$Application: FS2_Open
+
+$State: GS_STATE_GAME_PLAY
+
+$On State Start:    [[statestart.lua]]
+
+$On Mission Start:  [[missionstart.lua]]
+
+$On Gameplay Start: [[gameplaystart.lua]]
+
+$On Frame:          [[frame_abs.lua]]
+
+$On State End:      [[stateend.lua]]
+
+#End
